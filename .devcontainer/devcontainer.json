@@ -1,0 +1,22 @@
+{
+  "name": "icspark-webdev-env",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [3000, 3001],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Live Server"
+    },
+    "3001": {
+      "label": "IGNORE ME"
+    }
+  },
+  "postAttachCommand": ". .devcontainer/welcome.sh"
+}
